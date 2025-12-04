@@ -24,4 +24,42 @@
 
         h1, p {
             color: white;
-            text-shadow: 0 2px 
+            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+        }
+
+        .input-container {
+            margin-top: 40px;
+            position: relative;
+            height: 200px; /* nécessaire pour que le champ puisse bouger */
+        }
+
+        #troll-input {
+            position: absolute;
+            font-size: 18px;
+            padding: 10px;
+            width: 300px;
+            transition: transform 0.2s ease, filter 0.2s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Saisissez vos informations</h1>
+
+    <p>
+        Veuillez entrer votre adresse complète dans ce champ (si vous y arrivez).<br>
+        Format strict attendu :
+        <strong>CODEPOSTAL VILLE NUMÉRO TYPEVOIE NOM DE RUE</strong><br>
+        Exemple : <em>75001 PARIS 15 RUE DE RIVOLI</em>
+    </p>
+
+    <div class="input-container">
+        <input id="troll-input" type="text" placeholder="Bonne chance…" autocomplete="off">
+    </div>
+
+    <!-- Le script doit être chargé APRÈS le HTML -->
+    <script src="js/troll.js"></script>
+
+</body>
+</html>
