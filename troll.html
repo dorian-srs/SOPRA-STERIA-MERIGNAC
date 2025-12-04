@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Champ Troll</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- CSS spécifique à cette page -->
+    <style>
+        body {
+            background: url('assets/wallpaper.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.55);
+            z-index: -1;
+            backdrop-filter: blur(2px);
+        }
+
+        h1, p {
+            color: white;
+            text-shadow: 0 2px 

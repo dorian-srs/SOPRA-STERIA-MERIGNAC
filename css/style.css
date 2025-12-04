@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 48px;
+    font-weight: 800;
+    color: #111;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #222; /* encore plus noir */
+    max-width: 900px;
+    margin: 0 auto; /* centre le paragraphe */
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 18px;
+    background: #0078ff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #005fcc;
+}
+
+.input-container {
+    margin-top: 30px;
+    position: relative;
+    height: 120px;
+}
+
+#troll-input {
+    padding: 12px;
+    width: 350px;
+    font-size: 16px;
+    transition: transform 0.2s ease, filter 0.2s ease;
+    position: absolute;
+}
+
+/* Assombrit légèrement le fond pour rendre le texte lisible */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.45); /* Ajuste l’opacité ici */
+    z-index: -1; /* reste derrière le contenu */
+    backdrop-filter: blur(2px); /* optionnel : adoucit l'image */
+}
